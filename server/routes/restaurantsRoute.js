@@ -5,7 +5,5 @@ module.exports = function(app){
     res.render('restaurants.ejs')
   })
 
-  app.post('/restaurants/create', function(req, res){
-    res.render('results.ejs');
-  })
+  app.post('/restaurants/create', controller.restaurantInfo);
 }
