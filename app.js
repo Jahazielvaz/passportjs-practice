@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(urlEncoded);
 app.use(express.static(path.join(__dirname, 'statics')));
 
-let restaurantsRoute = require('./server/routes/restaurantsRoute.js')(app);
+const restaurantsRoute = require('./server/routes/restaurantsRoute.js')(app);
 
 
 module.exports = app;
